@@ -1,0 +1,15 @@
+oldFilename: Global_marine-trophic-index_v45-1.csv
+indicatorName: Marine Trophic Index
+date: ''
+core_highlight_other: Core
+whole_part: Whole
+high_low: High
+nameForPlot: Marine Trophic Index
+ebvClass: Species traits
+representative_fundamental: 'No'
+sensitive: 'No'
+underpinNCP: 'Yes'
+pristineValue: .na.real
+allgoneValue: 1
+notes: This is RMTI, i.e., region-based MTI, as that is robust against expansion of
+  fished area

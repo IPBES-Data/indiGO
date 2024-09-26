@@ -1,0 +1,14 @@
+oldFilename: WBI_habitat.csv
+indicatorName: Wild Bird Index (habitat specialists)
+date: 23/02/2018
+core_highlight_other: Other
+whole_part: Whole
+high_low: High
+nameForPlot: Wild Bird Index (habitat specialists)
+ebvClass: Species populations
+representative_fundamental: 'No'
+sensitive: 'Yes'
+underpinNCP: 'No'
+pristineValue: .na.real
+allgoneValue: 0
+notes: ''

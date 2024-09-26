@@ -1,0 +1,14 @@
+oldFilename: Global_wilderness_extent_km2.csv
+indicatorName: Global wilderness extent (km2)
+date: ''
+core_highlight_other: Other
+whole_part: Whole
+high_low: High
+nameForPlot: Extent of terrestrial wilderness
+ebvClass: Ecosystem structure
+representative_fundamental: 'No'
+sensitive: 'Yes'
+underpinNCP: 'No'
+pristineValue: 1.29741e+08
+allgoneValue: 0
+notes: See Google Doc for justification of pristine value

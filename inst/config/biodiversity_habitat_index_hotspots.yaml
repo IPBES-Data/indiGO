@@ -1,0 +1,14 @@
+oldFilename: BHI_all_taxa.csv
+indicatorName: All-taxa habitat (BILBI) - hotspots
+date: 29/10/2018
+core_highlight_other: Core
+whole_part: Part
+high_low: High
+nameForPlot: BHI (overall habitat integrity) - Hotspots
+ebvClass: Ecosystem structure
+representative_fundamental: 'Yes'
+sensitive: 'No'
+underpinNCP: 'No'
+pristineValue: 1.0
+allgoneValue: 0
+notes: ''

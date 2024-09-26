@@ -1,0 +1,14 @@
+oldFilename: BIP indicator IAS 21 countries2.csv
+indicatorName: Number of invasive alien species introductions
+date: 23/02/2018
+core_highlight_other: Highlight
+whole_part: Whole
+high_low: Low
+nameForPlot: Cumulative introduced invasive aliens
+ebvClass: Community composition
+representative_fundamental: 'Yes'
+sensitive: 'No'
+underpinNCP: 'No'
+pristineValue: 0.0
+allgoneValue: .na.integer
+notes: ''

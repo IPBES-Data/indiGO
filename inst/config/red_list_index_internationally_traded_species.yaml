@@ -1,0 +1,14 @@
+oldFilename: RLI_tradedspp.csv
+indicatorName: Red List Index (internationally traded species)
+date: 23/02/2018
+core_highlight_other: Core
+whole_part: Part
+high_low: High
+nameForPlot: RLI (internationally traded birds)
+ebvClass: Species populations
+representative_fundamental: 'No'
+sensitive: 'No'
+underpinNCP: 'Yes'
+pristineValue: 1.0
+allgoneValue: 0
+notes: ''

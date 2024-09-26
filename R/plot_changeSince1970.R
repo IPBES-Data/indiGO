@@ -10,9 +10,8 @@
 #'
 plot_changeSince1970 <- function(indicatorName) {
 
-  # Load indicator data and metadata
+  # Load indicator data
   ts <- load_indicatorData(indicatorName)
-  metadata <- subset(load_indicatorMetadata(), Indicator_name == indicatorName)
 
   # Rescale values relative to 1970
   s70 <- try(rescale_to_1970(v = ts$value, y = ts$year))
@@ -27,7 +26,7 @@ plot_changeSince1970 <- function(indicatorName) {
       ggplot2::geom_point(colour = "blue", size = 3) +
       ggplot2::xlim(c(1970, 2020)) +
       ggplot2::labs(
-        title = metadata$Name_for_plot,
+        title = getOption("Name_for_plot"),
         subtitle = "Change since 1970 or, if later, the first available year",
         y = "Rescaled value (first available year since 1970 = 100)",
         x = "Year"
@@ -53,7 +52,7 @@ plot_changeSince1970 <- function(indicatorName) {
       ggplot2::ylim(c(0, 100)) +
       ggplot2::xlim(c(1970, 2020)) +
       ggplot2::labs(
-        title = metadata$Name_for_plot,
+        title = getOption("Name_for_plot"),
         subtitle = "Not enough data to estimate trend since 1970",
         y = "",
         x = ""

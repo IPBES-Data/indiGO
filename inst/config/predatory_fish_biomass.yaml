@@ -1,0 +1,14 @@
+oldFilename: fish_biomass.csv
+indicatorName: Predatory sea fish biomass
+date: 28/03/2018
+core_highlight_other: Other
+whole_part: Whole
+high_low: High
+nameForPlot: Predatory fish biomass
+ebvClass: Species populations
+representative_fundamental: 'No'
+sensitive: 'Yes'
+underpinNCP: 'Yes'
+pristineValue: .na.real
+allgoneValue: 0
+notes: ''

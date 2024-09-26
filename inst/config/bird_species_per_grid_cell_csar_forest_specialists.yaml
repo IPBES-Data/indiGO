@@ -1,0 +1,14 @@
+oldFilename: csar_iDiv_forestspec_Localtoglobal.csv
+indicatorName: cSAR Local results aggregated to Global forest specialists
+date: 01/01/2018
+core_highlight_other: Other
+whole_part: Part
+high_low: High
+nameForPlot: Forest-specialist bird species per grid cell (cSAR)
+ebvClass: Community composition
+representative_fundamental: 'No'
+sensitive: 'Yes'
+underpinNCP: 'No'
+pristineValue: .na.real
+allgoneValue: 0
+notes: ''

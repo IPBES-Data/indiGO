@@ -1,0 +1,14 @@
+oldFilename: Proportion_fish_stocks_safe_biological_limits.csv
+indicatorName: Proportion of fish stocks within biologically sustainable levels
+date: 23/02/2018
+core_highlight_other: Core
+whole_part: Whole
+high_low: High
+nameForPlot: Fish stocks biologically sustainable
+ebvClass: Species populations
+representative_fundamental: 'No'
+sensitive: 'No'
+underpinNCP: 'Yes'
+pristineValue: 100.0
+allgoneValue: 0
+notes: ''

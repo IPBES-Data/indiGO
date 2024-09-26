@@ -1,0 +1,14 @@
+oldFilename: RLI.csv
+indicatorName: Red List Index
+date: 23/02/2018
+core_highlight_other: Core
+whole_part: Whole
+high_low: High
+nameForPlot: Red List Index (overall)
+ebvClass: Species populations
+representative_fundamental: 'Yes'
+sensitive: 'No'
+underpinNCP: 'No'
+pristineValue: 1.0
+allgoneValue: 0
+notes: ''

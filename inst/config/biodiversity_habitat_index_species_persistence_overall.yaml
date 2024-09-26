@@ -1,0 +1,14 @@
+oldFilename: BHI_all_taxa.csv
+indicatorName: All-taxa richness (BILBI)
+date: 29/10/2018
+core_highlight_other: Core
+whole_part: Whole
+high_low: High
+nameForPlot: Biodiversity Habitat Index (species persisting)
+ebvClass: Species populations
+representative_fundamental: 'Yes'
+sensitive: 'No'
+underpinNCP: 'No'
+pristineValue: 1.0
+allgoneValue: 0
+notes: ''

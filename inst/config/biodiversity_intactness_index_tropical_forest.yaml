@@ -1,0 +1,14 @@
+oldFilename: global_BII_tropical_forest.csv
+indicatorName: Biodiversity Intactness Index (tropical forest only)
+date: 03/10/2018
+core_highlight_other: Core
+whole_part: Whole
+high_low: High
+nameForPlot: Tropical forest BII (overall)
+ebvClass: Community composition
+representative_fundamental: 'Yes'
+sensitive: 'No'
+underpinNCP: 'No'
+pristineValue: 1.0
+allgoneValue: 0
+notes: Slacked by Adriana on 15/3/18; regional files have same structure

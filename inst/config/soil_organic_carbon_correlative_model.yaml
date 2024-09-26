@@ -1,0 +1,14 @@
+oldFilename: SoilOrganicCarbon.csv
+indicatorName: Soil organic carbon
+date: 02/04/2018
+core_highlight_other: Other
+whole_part: Whole
+high_low: High
+nameForPlot: Soil organic carbon (correlative model)
+ebvClass: Ecosystem structure
+representative_fundamental: 'Yes'
+sensitive: 'No'
+underpinNCP: 'No'
+pristineValue: 2200.0
+allgoneValue: 0
+notes: See google doc for baseline

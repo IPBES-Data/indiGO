@@ -1,0 +1,14 @@
+oldFilename: wetindex.csv
+indicatorName: Wetland Extent Trends Index
+date: 23/02/2018
+core_highlight_other: Highlight
+whole_part: Whole
+high_low: High
+nameForPlot: Wetland Extent Trends Index
+ebvClass: Ecosystem structure
+representative_fundamental: 'Yes'
+sensitive: 'Yes'
+underpinNCP: 'No'
+pristineValue: .na.real
+allgoneValue: 0
+notes: See Google Doc for justification of Pristine value

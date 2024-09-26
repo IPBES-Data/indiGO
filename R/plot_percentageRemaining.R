@@ -13,16 +13,14 @@ plot_percentageRemaining <- function(indicatorName) {
 
   # Load indicator data and corresponding metadata
   ts <- load_indicatorData(indicatorName)
-  metadata <- subset(load_indicatorMetadata(), Indicator_name == indicatorName)
-
 
   # Attempt to rescale the data to a percentage (if possible)
   pct <- try(rescale_to_percent(
     v = ts$value,
     y = ts$year,
-    hl = metadata$HiOrLoBetter,
-    pv = metadata$PristineValue,
-    agv = metadata$AllGoneValue
+    hl = getOption("high_low"),
+    pv = getOption("pristineValue"),
+    agv = getOption("allgoneValue")
   ))
 
   # If rescaling is successful and there are valid values, generate the plot
@@ -36,7 +34,7 @@ plot_percentageRemaining <- function(indicatorName) {
       ggplot2::geom_line(ggplot2::aes(y = percent.fit), color = "black") +
       ggplot2::ylim(c(0, ymax)) +
       ggplot2::labs(
-        title = metadata$Name_for_plot,
+        title = getOption("Name_for_plot"),
         subtitle = "Scale: 0 = nothing left, 100 = pristine state",
         y = "Rescaled value (pre-driver state = 100)",
         x = "Year"
@@ -47,7 +45,7 @@ plot_percentageRemaining <- function(indicatorName) {
     p_percent <- ggplot2::ggplot(ts, ggplot2::aes(x = year, y = percent)) +
       ggplot2::geom_blank() +
       ggplot2::labs(
-        title = metadata$Name_for_plot,
+        title = getOption("Name_for_plot"),
         subtitle = "Cannot rescale to pristine-to-destroyed scale",
         y = "",
         x = "Year"

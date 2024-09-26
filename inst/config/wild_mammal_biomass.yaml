@@ -1,0 +1,14 @@
+oldFilename: Wild mammal biomass.csv
+indicatorName: Wild mammal biomass
+date: 26/10/2018
+core_highlight_other: Other
+whole_part: Whole
+high_low: High
+nameForPlot: Wild mammal biomass
+ebvClass: Species populations
+representative_fundamental: 'No'
+sensitive: 'No'
+underpinNCP: 'Yes'
+pristineValue: 0.04
+allgoneValue: 0
+notes: Pristine value is from same paper, Fig S5 and associated text

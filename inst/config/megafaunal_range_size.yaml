@@ -1,0 +1,14 @@
+oldFilename: FaurbyMammalGridOccurrences.csv
+indicatorName: Terrestrial megafaunal grid cells
+date: 05/04/2018
+core_highlight_other: Other
+whole_part: Part
+high_low: High
+nameForPlot: Megafaunal range size
+ebvClass: Species populations
+representative_fundamental: 'No'
+sensitive: 'Yes'
+underpinNCP: 'No'
+pristineValue: 242960.0
+allgoneValue: 0
+notes: ''

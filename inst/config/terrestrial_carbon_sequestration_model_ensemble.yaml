@@ -1,0 +1,15 @@
+oldFilename: Trendy_Indicators_20181104_1860to2015.csv
+indicatorName: NBP (PgC/yr)
+date: 03/11/2018
+core_highlight_other: Other
+whole_part: Whole
+high_low: High
+nameForPlot: Terrestrial C sequestration (model ensemble)
+ebvClass: Ecosystem function
+representative_fundamental: 'Yes'
+sensitive: 'No'
+underpinNCP: 'No'
+pristineValue: .na.real
+allgoneValue: 0
+notes: Not giving a pristine value as this is a net balance and so fluctuates either
+  side of zero

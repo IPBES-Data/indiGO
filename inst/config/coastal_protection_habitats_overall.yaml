@@ -1,0 +1,14 @@
+oldFilename: coastal_protection.csv
+indicatorName: Extent and condition of coastal protection habitats
+date: 28/03/2018
+core_highlight_other: Other
+whole_part: Whole
+high_low: High
+nameForPlot: Coastal protection habitats
+ebvClass: Ecosystem structure
+representative_fundamental: 'Yes'
+sensitive: 'Yes'
+underpinNCP: 'Yes'
+pristineValue: .na.real
+allgoneValue: 0
+notes: http://www.oceanhealthindex.org/methodology/goals/coastal-protection

@@ -1,0 +1,14 @@
+oldFilename: GridCellMedianBodyMass.csv
+indicatorName: Median mammalian body mass
+date: 04/04/2018
+core_highlight_other: Other
+whole_part: Whole
+high_low: High
+nameForPlot: Mammalian body mass
+ebvClass: Species traits
+representative_fundamental: 'Yes'
+sensitive: 'Yes'
+underpinNCP: 'No'
+pristineValue: 677.025
+allgoneValue: 0
+notes: ''

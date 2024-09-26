@@ -1,0 +1,14 @@
+oldFilename: coral cover data.csv
+indicatorName: Percentage live coral cover
+date: 23/02/2018
+core_highlight_other: Other
+whole_part: Whole
+high_low: High
+nameForPlot: Percentage live coral cover
+ebvClass: Ecosystem structure
+representative_fundamental: 'Yes'
+sensitive: 'Yes'
+underpinNCP: 'No'
+pristineValue: 59.0
+allgoneValue: 0
+notes: ''

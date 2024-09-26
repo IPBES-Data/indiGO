@@ -1,0 +1,14 @@
+oldFilename: csar_iDiv_forestspec_Global.csv
+indicatorName: cSAR Global calculation forest specialists
+date: 01/01/2018
+core_highlight_other: Other
+whole_part: Part
+high_low: High
+nameForPlot: Global forest-specialist bird richness (cSAR)
+ebvClass: Species populations
+representative_fundamental: 'No'
+sensitive: 'Yes'
+underpinNCP: 'No'
+pristineValue: 100.0
+allgoneValue: 0
+notes: ''

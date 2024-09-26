@@ -1,0 +1,14 @@
+oldFilename: SHI_180302_derived.csv
+indicatorName: Species Habitat Index
+date: 02/03/2018
+core_highlight_other: Core
+whole_part: Whole
+high_low: High
+nameForPlot: Species Habitat Index
+ebvClass: Species populations
+representative_fundamental: 'Yes'
+sensitive: 'No'
+underpinNCP: 'No'
+pristineValue: .na.real
+allgoneValue: 0
+notes: These are the area-weighted mean values including overseas territories.

@@ -1,0 +1,14 @@
+oldFilename: FA_180302_derived.csv
+indicatorName: Forest area as a percentage of total land area
+date: 02/03/2018
+core_highlight_other: Core
+whole_part: Whole
+high_low: High
+nameForPlot: Extent of forests
+ebvClass: Ecosystem structure
+representative_fundamental: 'No'
+sensitive: 'No'
+underpinNCP: 'Yes'
+pristineValue: 0.45
+allgoneValue: 0
+notes: Pristine value is from FAO 2012 State of the world's forests

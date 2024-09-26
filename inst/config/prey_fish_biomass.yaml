@@ -1,0 +1,14 @@
+oldFilename: fish_biomass.csv
+indicatorName: Prey sea fish biomass
+date: 28/03/2018
+core_highlight_other: Other
+whole_part: Whole
+high_low: High
+nameForPlot: Prey fish biomass
+ebvClass: Species populations
+representative_fundamental: 'No'
+sensitive: 'No'
+underpinNCP: 'No'
+pristineValue: .na.real
+allgoneValue: 0
+notes: ''

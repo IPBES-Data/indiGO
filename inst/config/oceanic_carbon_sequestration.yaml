@@ -1,0 +1,14 @@
+oldFilename: Ocean_carbon_sink.csv
+indicatorName: Ocean carbon sink PgC
+date: 16/03/2018
+core_highlight_other: Other
+whole_part: Whole
+high_low: High
+nameForPlot: Oceanic carbon sequestration
+ebvClass: Ecosystem function
+representative_fundamental: 'Yes'
+sensitive: 'No'
+underpinNCP: 'Yes'
+pristineValue: .na.real
+allgoneValue: .na.integer
+notes: ''

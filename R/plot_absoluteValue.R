@@ -17,7 +17,7 @@ plot_absoluteValue <- function(indicatorName) {
   p_absolute <- ggplot2::ggplot(ts, ggplot2::aes(x = year, y = value)) +
     ggplot2::geom_point(colour = "red", size = 3) +
     ggplot2::labs(
-      title = indicatorName,
+      title = getOption("Name_for_plot"),
       x = "Year",
       y = "Raw value",
       subtitle = "Expressed on the scale of raw values"

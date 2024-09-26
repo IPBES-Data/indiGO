@@ -1,0 +1,14 @@
+oldFilename: NPP_eco.csv
+indicatorName: NPP_eco (Pg C)
+date: 27/03/2018
+core_highlight_other: Other
+whole_part: Whole
+high_low: High
+nameForPlot: NPP remaining in ecosystems
+ebvClass: Ecosystem function
+representative_fundamental: 'Yes'
+sensitive: 'No'
+underpinNCP: 'No'
+pristineValue: 5.2221669e+07
+allgoneValue: 0
+notes: ''

@@ -1,0 +1,14 @@
+oldFilename: csar_iDiv_Allbirds_Global.csv
+indicatorName: cSAR Global calculation all birds
+date: 01/01/2018
+core_highlight_other: Other
+whole_part: Whole
+high_low: High
+nameForPlot: Global bird richness (cSAR)
+ebvClass: Species populations
+representative_fundamental: 'Yes'
+sensitive: 'No'
+underpinNCP: 'No'
+pristineValue: 100.0
+allgoneValue: 0
+notes: ''

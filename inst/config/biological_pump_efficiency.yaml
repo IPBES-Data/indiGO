@@ -1,0 +1,15 @@
+oldFilename: Biological_pump_annual.csv
+indicatorName: Biological pump efficiency
+date: 22/10/2018
+core_highlight_other: Other
+whole_part: Whole
+high_low: High
+nameForPlot: Biological pump efficiency
+ebvClass: Ecosystem function
+representative_fundamental: 'Yes'
+sensitive: 'No'
+underpinNCP: 'No'
+pristineValue: .na.real
+allgoneValue: 0
+notes: Trend is very statistically significant in each of the 6 models whose average
+  is this

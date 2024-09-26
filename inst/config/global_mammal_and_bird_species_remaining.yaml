@@ -1,0 +1,14 @@
+oldFilename: extant.mammals.and.birds.csv
+indicatorName: Numbers of extant mammal and bird species
+date: ''
+core_highlight_other: Highlight
+whole_part: Whole
+high_low: High
+nameForPlot: Global mammal & bird species remaning
+ebvClass: Species populations
+representative_fundamental: 'Yes'
+sensitive: 'No'
+underpinNCP: 'No'
+pristineValue: 16796.0
+allgoneValue: 0
+notes: Not the data Sarah Darrah gave me

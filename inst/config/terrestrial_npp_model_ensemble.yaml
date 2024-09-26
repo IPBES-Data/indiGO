@@ -1,0 +1,14 @@
+oldFilename: Trendy_Indicators_20181104_1860to2015.csv
+indicatorName: NPP (PgC/yr)
+date: 03/11/2018
+core_highlight_other: Other
+whole_part: Whole
+high_low: High
+nameForPlot: Terrestrial NPP (model ensemble)
+ebvClass: Ecosystem function
+representative_fundamental: 'Yes'
+sensitive: 'No'
+underpinNCP: 'No'
+pristineValue: 47.412
+allgoneValue: 0
+notes: Pristine value is for 1860, the first year of the model run

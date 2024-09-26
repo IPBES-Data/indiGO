@@ -1,0 +1,14 @@
+oldFilename: Nspec_annual_global_cummulative.csv
+indicatorName: Cumulative number of alien species
+date: 29/05/2017
+core_highlight_other: Other
+whole_part: Whole
+high_low: Low
+nameForPlot: Cumulative number of alien species
+ebvClass: Community composition
+representative_fundamental: 'Yes'
+sensitive: 'No'
+underpinNCP: 'No'
+pristineValue: 0.0
+allgoneValue: .na.integer
+notes: Data emailed by Seebens 2017-05-29

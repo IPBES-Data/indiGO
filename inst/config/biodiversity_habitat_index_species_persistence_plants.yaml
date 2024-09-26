@@ -1,0 +1,14 @@
+oldFilename: BHI_plants.csv
+indicatorName: Plant richness (BILBI)
+date: 01/10/2018
+core_highlight_other: Core
+whole_part: Part
+high_low: High
+nameForPlot: BHI (plant species persisting)
+ebvClass: Species populations
+representative_fundamental: 'Yes'
+sensitive: 'No'
+underpinNCP: 'No'
+pristineValue: 1.0
+allgoneValue: 0
+notes: ''

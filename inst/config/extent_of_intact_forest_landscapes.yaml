@@ -1,0 +1,14 @@
+oldFilename: IntactForestLandscapeExtent.csv
+indicatorName: Intact Forest Landscape extent
+date: ''
+core_highlight_other: Other
+whole_part: Whole
+high_low: High
+nameForPlot: Extent of intact forest landscapes
+ebvClass: Ecosystem structure
+representative_fundamental: 'No'
+sensitive: 'Yes'
+underpinNCP: 'No'
+pristineValue: 5.9105082e+07
+allgoneValue: 0
+notes: See Google Doc for justification of pristine value

@@ -1,0 +1,14 @@
+oldFilename: SeagrassAreaKm2.csv
+indicatorName: Seagrass meadow extent
+date: 26/10/2018
+core_highlight_other: Other
+whole_part: Whole
+high_low: High
+nameForPlot: Seagrass meadow area
+ebvClass: Ecosystem structure
+representative_fundamental: 'Yes'
+sensitive: 'Yes'
+underpinNCP: 'No'
+pristineValue: 322063.823
+allgoneValue: 0
+notes: http://www.pnas.org/content/suppl/2009/07/08/0905620106.DCSupplemental/0905620106SI.pdf#nameddest=STXT

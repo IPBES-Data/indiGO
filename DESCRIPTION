@@ -13,5 +13,6 @@ LazyData: true
 Imports: 
     ggplot2,
     gridExtra,
-    mgcv
+    mgcv,
+    yaml
 RoxygenNote: 7.3.2
