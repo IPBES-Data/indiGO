@@ -1,6 +1,8 @@
 [![DOI](https://zenodo.org/badge/DOI/10.1234/zenodo.1234567.svg)](https://doi.org/10.1234/zenodo.1234567) [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active) [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-# The indiGO R Package <img src="./logo/indiGO_Logo.png" alt="indiGO logo" width="150" style="float: right"/>
+![indiGO logo](./logo/indiGO_Logo.png){style="float: right" width="150"}
+
+# The indiGO R Package
 
 The **indiGO (Indicators in Generalized Outputs)** R-package is designed to analyze and display global indicators of the status and trends in nature in a generalized and systematic way.
 
