@@ -4,16 +4,16 @@
 \alias{load_indicatorData}
 \title{Load Indicator Data}
 \usage{
-load_indicatorData(indicatorName)
+load_indicatorData(indicatorName = "percentage_of_live_coral_cover")
 }
 \arguments{
-\item{indicatorName}{A character string representing the full name of the indicator to be loaded. To view a list of available indicators, use the `print_indicatorNames()` function.}
+\item{indicatorName}{A character string representing the name of the indicator to be loaded. To view all available indicators, use the `print_indicatorNames()` function.}
 }
 \value{
-A data frame containing the year and corresponding global indicator values.
+A data frame containing the year and the corresponding global indicator values.
 }
 \description{
-This function loads indicator data included in the package, located in the `/inst/Global_IA_Data` directory. The data consists of global averages over time. Users can specify the indicator by its full name using the `indicatorName` parameter.
+This function loads indicator data either from the package’s included data or from a local directory as specified by the `options(indicatorDataPath = /inst/data)` setting (default location). The data provides global averages over time for the specified indicator.
 }
 \examples{
 # Load data for a specific indicator

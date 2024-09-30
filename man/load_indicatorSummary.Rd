@@ -10,7 +10,7 @@ load_indicatorSummary()
 A data frame containing comprehensive metadata for the available indicators, including details on the indicator's name, data sources, time span, EBV class, and other relevant attributes.
 }
 \description{
-This function loads a detailed overview of the metadata for indicators available in the IA package. The summary includes key information such as the indicator name, data sources, time span covered, EBV class, and other relevant attributes.
+This function loads a detailed overview of the metadata for indicators available in the package. The summary includes key information such as the indicator name, data sources, time span covered, EBV class, and other relevant attributes.
 }
 \examples{
 # Load the comprehensive metadata for the indicators

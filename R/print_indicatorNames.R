@@ -1,6 +1,6 @@
 #' Display Long Names of Available Indicators
 #'
-#' This function prints the long names of all available indicator data sets included in the IA package.
+#' This function prints the long names of all available indicator data sets included in the package.
 #'
 #' @return A sorted list of unique long names of available indicators.
 #' @examples

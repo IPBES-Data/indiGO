@@ -10,7 +10,7 @@ print_indicatorFileNames()
 A sorted vector of unique file names for the available indicator data sets.
 }
 \description{
-This function prints the file names of all available indicator data sets in the IA package. These files are located in the `inst/Global_IA_Data` directory. The function filters out superseded indicators and those without valid file names, displaying only the active and available ones.
+This function prints the file names of all available indicator data sets in the package.
 }
 \examples{
 # Example: Print the file names of available indicators

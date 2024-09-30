@@ -1,6 +1,6 @@
 #' Display Available Indicator File Names
 #'
-#' This function prints the file names of all available indicator data sets in the IA package.
+#' This function prints the file names of all available indicator data sets in the package.
 #'
 #' @return A sorted vector of unique file names for the available indicator data sets.
 #' @examples

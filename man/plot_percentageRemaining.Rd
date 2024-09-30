@@ -13,7 +13,7 @@ plot_percentageRemaining(indicatorName)
 A ggplot object displaying the trend line with the x-axis representing "Year" and the y-axis representing either the raw or rescaled values.
 }
 \description{
-This function generates a trend line plot for a given indicator over time. If applicable, the data is rescaled to a percentage scale where 100 represents the "pristine" state and 0 represents complete depletion. For details on the calculation see the IA function `rescale_to_percent()`
+This function generates a trend line plot for a given indicator over time. If applicable, the data is rescaled to a percentage scale where 100 represents the "pristine" state and 0 represents complete depletion. For details on the calculation see the function `rescale_to_percent()`
 }
 \examples{
 # Example: Plot the trend line for the Percentage of Natural Habitat Extent

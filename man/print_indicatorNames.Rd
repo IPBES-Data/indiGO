@@ -10,7 +10,7 @@ print_indicatorNames()
 A sorted list of unique long names of available indicators.
 }
 \description{
-This function prints the long names of all available indicator data sets included in the IA package.
+This function prints the long names of all available indicator data sets included in the package.
 }
 \examples{
 # Example: Print the long names of available indicators

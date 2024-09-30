@@ -1,6 +1,6 @@
 #' Plot Percentage Remaining of the Indicator Over Time
 #'
-#' This function generates a trend line plot for a given indicator over time. If applicable, the data is rescaled to a percentage scale where 100 represents the "pristine" state and 0 represents complete depletion. For details on the calculation see the IA function `rescale_to_percent()`
+#' This function generates a trend line plot for a given indicator over time. If applicable, the data is rescaled to a percentage scale where 100 represents the "pristine" state and 0 represents complete depletion. For details on the calculation see the function `rescale_to_percent()`
 #'
 #' @param indicatorName A character string representing the full name of the indicator to be plotted. Use `print_indicatorNames()` to view a list of available indicators.
 #'

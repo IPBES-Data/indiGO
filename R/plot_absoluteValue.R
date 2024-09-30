@@ -10,7 +10,7 @@
 #' plot_absoluteValue("Aboveground_biomass_PgC.csv")
 #'
 plot_absoluteValue <- function(indicatorName) {
-  # Load indicator data using the IA package's internal function
+  # Load indicator data using the indiGO package's internal function
   ts <- load_indicatorData(indicatorName)
 
   # Create the plot with ggplot2
