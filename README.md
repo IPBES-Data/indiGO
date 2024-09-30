@@ -24,8 +24,8 @@ Please note that while the indiGO R-package is developed with reference to IPBES
 
 To install the package, run the following command in R:
 
-\`\`\`r
+```{r}
+#Installation from GitHub
 
-# Installation from GitHub
-
-devtools::install_github("hetzerj/indiGO") \`\`\`
+devtools::install_github("hetzerj/indiGO")
+```
