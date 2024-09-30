@@ -1,13 +1,16 @@
 Package: indiGO
 Type: Package
-Title: Indicator Analysis Package 
+Title: indiGO - Indicators in Generalized Outputs  
 Version: 0.1.0
-Author@R: c(
+Maintainer: Jessica Hetzer <jessica.hetzer@senckenberg.de>
+Authors@R: c(
     person(given = "Jessica", family = "Hetzer", role = c("cre", "aut"), email = "jessica.hetzer@senckenberg.de"),
     person(given = "Rainer M.", family = "Krug", role = "aut", email = "rainer.krug@senckenberg.de"),
     person(given = "Aidin", family = "Niamir", role = "ths", email = "aidin.niamir@Senckenberg.de"))
 Description: The IA (Indicator Analysis) package provides tools for the systematic and standardized display of global indicators, specifically those outlined in the IPBES Global Assessment Chapter 2.2 – Supplementary Material: Indicators of Status & Trends in Nature. It allows users to access and recreate these indicators in an open-access, reproducible manner, facilitating analysis and comparisons across different datasets. Please note that IPBES is not responsible for the development or maintenance of this package, nor does it endorse the package or its outputs.
-License: What license is it under?
+URL: https://github.com/hetzerj/indiGO
+BugReports: https://github.com/hetzerj/indiGO/issues
+License: CCBY4.0
 Encoding: UTF-8
 LazyData: true
 Imports: 
