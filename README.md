@@ -4,7 +4,7 @@ The **indiGO (Indicators in Generalized Outputs)** R-package is designed to anal
 
 ## Overview
 
-The indiGO R-package provides an open-access framework that enables users to access annually and globally aggregated indicators as described in the first Global Assessment Report on Biodiversity and Ecosystem Services of the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES, 2019). It follows the standardization of indicators outlined in the supplemental material of the Global Assessment Report, Chapter 2.2: Status and Trends – Nature.
+The indiGO R-package provides an open-access framework that enables users to access annually and globally aggregated indicators as described in the [first Global Assessment Report on Biodiversity and Ecosystem Services](https://doi.org/10.5281/zenodo.3831673) of the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES, 2019). It follows the standardization of indicators outlined in the supplemental material of the Global Assessment Report, [Chapter 2.2: Status and Trends – Nature](https://doi.org/10.5281/zenodo.3832005).
 
 The package provides a flexible framework for handling a wide variety of indicators, not limited to a specific region, ecosystem, or time period. The generalized outputs are broad and adaptable, allowing users to apply them to various generalized data sets or indicator types across global or regional scales. Additionally, indiGO allows users to include their own data, enabling local data integration for customized indicator analysis.
 
