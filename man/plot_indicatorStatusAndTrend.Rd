@@ -23,6 +23,6 @@ The function calls three specific plotting functions: `plot_absoluteValue()`, `p
 }
 \examples{
 # Example: Plot status and trend for the Percentage of Natural Habitat Extent
-plot_indicatorStatusAndTrend("Percentage natural habitat extent")
+plot_indicatorStatusAndTrend("aboveground_biomass")
 
 }

@@ -7,7 +7,7 @@
 #' @return A ggplot figure with "Year" on the x-axis and "Raw value" on the y-axis, representing the absolute values of the selected indicator.
 #' @examples
 #' # Example: Plot the absolute values of the Aboveground biomass indicator
-#' plot_indi_data("Aboveground_biomass.txt")
+#' plot_indi_data("aboveground_biomass")
 #'
 plot_indi_data <- function(indicatorName) {
   # Load indicator data using the indiGO package's internal function

@@ -13,14 +13,14 @@
 #'
 #' @examples
 #' # Example: Plot status and trend for the Percentage of Natural Habitat Extent
-#' plot_indicatorStatusAndTrend("Percentage natural habitat extent")
+#' plot_indicatorStatusAndTrend("aboveground_biomass")
 #'
 plot_indicatorStatusAndTrend <- function(indicatorName) {
 
   # Combine the three specific plots into a single 3-panel plot
   gridExtra::grid.arrange(
     plot_indi_data(indicatorName),    # Absolute values plot (left panel)
-    plot_percentageRemaining(indicatorName),   # Remaining percentage in comparison to pristine world (middle panel)
+    plot_scaled_to_remaining(indicatorName),   # Remaining percentage in comparison to pristine world (middle panel)
     plot_changeSince1970(indicatorName),  # Relative change since 1970 (right panel)
     ncol = 3,                             # Arrange in 3 columns
     heights = c(1),                       # Control height ratio (single row)

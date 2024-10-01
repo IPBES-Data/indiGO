@@ -17,6 +17,6 @@ This function generates a plot showing the absolute values of a given indicator 
 }
 \examples{
 # Example: Plot the absolute values of the Aboveground biomass indicator
-plot_indi_data("Aboveground_biomass.txt")
+plot_indi_data("aboveground_biomass")
 
 }

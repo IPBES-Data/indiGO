@@ -7,9 +7,9 @@
 #' @return A ggplot object displaying the trend line with the x-axis representing "Year" and the y-axis representing either the raw or rescaled values.
 #' @examples
 #' # Example: Plot the trend line for the Percentage of Natural Habitat Extent
-#' plot_percentageRemaining("Percentage natural habitat extent")
+#' plot_scaled_to_remaining("aboveground_biomass")
 
-plot_percentageRemaining <- function(indicatorName) {
+plot_scaled_to_remaining<- function(indicatorName) {
 
   # Load indicator data and corresponding metadata
   ts <- indi_data(indicatorName)
