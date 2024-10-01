@@ -19,7 +19,7 @@ plot_indicatorStatusAndTrend <- function(indicatorName) {
 
   # Combine the three specific plots into a single 3-panel plot
   gridExtra::grid.arrange(
-    plot_absoluteValue(indicatorName),    # Absolute values plot (left panel)
+    plot_indi_data(indicatorName),    # Absolute values plot (left panel)
     plot_percentageRemaining(indicatorName),   # Remaining percentage in comparison to pristine world (middle panel)
     plot_changeSince1970(indicatorName),  # Relative change since 1970 (right panel)
     ncol = 3,                             # Arrange in 3 columns

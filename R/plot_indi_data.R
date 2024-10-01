@@ -1,15 +1,15 @@
-#' Plot Absolute Values of Indicator Over Time
+#' Plot raw Values of Indicator values from file
 #'
 #' This function generates a plot showing the absolute values of a given indicator over time, with years on the x-axis and raw indicator values on the y-axis.
 #'
-#' @param indicatorName A character string representing the full name of the indicator to be plotted. To view a list of available indicators, use the `print_indicatorNames()` function.
+#' @param indicatorName A character string representing the full name of the indicator to be plotted. To view a list of available indicators, use the `indi_search()` function.
 #'
 #' @return A ggplot figure with "Year" on the x-axis and "Raw value" on the y-axis, representing the absolute values of the selected indicator.
 #' @examples
 #' # Example: Plot the absolute values of the Aboveground biomass indicator
-#' plot_absoluteValue("Aboveground_biomass_PgC.csv")
+#' plot_indi_data("Aboveground_biomass.txt")
 #'
-plot_absoluteValue <- function(indicatorName) {
+plot_indi_data <- function(indicatorName) {
   # Load indicator data using the indiGO package's internal function
   ts <- indi_data(indicatorName)
 
