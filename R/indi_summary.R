@@ -12,10 +12,10 @@
 #'
 indi_summary <- function() {
   # Define the file path for the metadata summary
-  data_path <- system.file("Metadata", "SOD_Table1.csv", package = "indiGO")
+  data_path <- system.file("Metadata", "Indicator_Summary.txt", package = "indiGO")
 
   # Read the metadata summary file (tab-separated)
-  dat <- read.csv(data_path, sep = "\t")
+  dat <- read.table(data_path, header=TRUE)
 
   return(dat)
 }
