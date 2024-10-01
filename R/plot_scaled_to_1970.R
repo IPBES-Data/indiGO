@@ -6,9 +6,9 @@
 #' @return A ggplot object showing the relative change of the indicator over time. The x-axis represents the year, and the y-axis represents the rescaled values, with the first available year since 1970 set to 100.
 #' @examples
 #' # Example: Plot the relative change since 1970 for the Aboveground biomass indicator
-#' plot_changeSince1970("Aboveground_biomass_PgC.csv")
+#' plot_scaled_to_1970("aboveground_biomass")
 #'
-plot_changeSince1970 <- function(indicatorName) {
+plot_scaled_to_1970 <- function(indicatorName) {
 
   # Load indicator data
   ts <- indi_data(indicatorName)
