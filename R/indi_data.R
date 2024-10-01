@@ -6,14 +6,14 @@
 #' @return A data frame containing the year and the corresponding global indicator values.
 #' @examples
 #' # Load data for a specific indicator
-#' dat <- load_indicatorData("Aboveground_biomass_PgC.csv")
+#' dat <- indi_data("aboveground_biomass")
 #' head(dat)
 #' plot(dat)
 #'
 #' @references
 #' Data sourced from IPBES (2019). *Global Assessment Chapter 2.2 – Supplementary Material: Indicators of Status & Trends in Nature*.
 #'
-indi_data <- function(indicatorName="percentage_of_live_coral_cover") {
+indi_data <- function(indicatorName) {
   data_path <- file.path(getOption("indicatorDataPath"), paste(indicatorName, ".txt", sep=""))
 
   # Check if the data file exists

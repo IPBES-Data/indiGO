@@ -4,7 +4,7 @@
 \alias{indi_data}
 \title{Get raw Indicator Data from file}
 \usage{
-indi_data(indicatorName = "percentage_of_live_coral_cover")
+indi_data(indicatorName)
 }
 \arguments{
 \item{indicatorName}{A character string representing the name of the indicator to be loaded. To view available indicators, use the `indi_search()` function.}
@@ -17,7 +17,7 @@ This function loads indicator data either from the package’s included data or 
 }
 \examples{
 # Load data for a specific indicator
-dat <- load_indicatorData("Aboveground_biomass_PgC.csv")
+dat <- indi_data("aboveground_biomass")
 head(dat)
 plot(dat)
 
