@@ -11,7 +11,7 @@
 #'
 plot_absoluteValue <- function(indicatorName) {
   # Load indicator data using the indiGO package's internal function
-  ts <- load_indicatorData(indicatorName)
+  ts <- indi_data(indicatorName)
 
   # Create the plot with ggplot2
   p_absolute <- ggplot2::ggplot(ts, ggplot2::aes(x = year, y = value)) +

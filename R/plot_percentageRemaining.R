@@ -12,7 +12,7 @@
 plot_percentageRemaining <- function(indicatorName) {
 
   # Load indicator data and corresponding metadata
-  ts <- load_indicatorData(indicatorName)
+  ts <- indi_data(indicatorName)
 
   # Attempt to rescale the data to a percentage (if possible)
   pct <- try(rescale_to_percent(

@@ -11,7 +11,7 @@
 plot_changeSince1970 <- function(indicatorName) {
 
   # Load indicator data
-  ts <- load_indicatorData(indicatorName)
+  ts <- indi_data(indicatorName)
 
   # Rescale values relative to 1970
   s70 <- try(rescale_to_1970(v = ts$value, y = ts$year))

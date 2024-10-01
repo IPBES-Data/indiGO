@@ -1,8 +1,8 @@
-#' Load Indicator Data
+#' Get raw Indicator Data from file
 #'
 #' This function loads indicator data either from the package’s included data or from a local directory as specified by the `options(indicatorDataPath = /inst/data)` setting (default location). The data provides global averages over time for the specified indicator.
 #'
-#' @param indicatorName A character string representing the name of the indicator to be loaded. To view all available indicators, use the `print_indicatorNames()` function.
+#' @param indicatorName A character string representing the name of the indicator to be loaded. To view available indicators, use the `indi_search()` function.
 #' @return A data frame containing the year and the corresponding global indicator values.
 #' @examples
 #' # Load data for a specific indicator
@@ -13,7 +13,7 @@
 #' @references
 #' Data sourced from IPBES (2019). *Global Assessment Chapter 2.2 – Supplementary Material: Indicators of Status & Trends in Nature*.
 #'
-load_indicatorData <- function(indicatorName="percentage_of_live_coral_cover") {
+indi_data <- function(indicatorName="percentage_of_live_coral_cover") {
   data_path <- file.path(getOption("indicatorDataPath"), paste(indicatorName, ".txt", sep=""))
 
   # Check if the data file exists
@@ -23,7 +23,6 @@ load_indicatorData <- function(indicatorName="percentage_of_live_coral_cover") {
 
   # Read the data from the text file
   dat <- read.table(data_path, header = TRUE)
-
 
   config_path <- file.path(getOption("indicatorConfigPath"), paste(indicatorName, ".yaml", sep=""))
 
