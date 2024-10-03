@@ -36,4 +36,4 @@ devtools::install_github("hetzerj/indiGO")
 
 ## How to Use
 
-You can find a demostration of the package usage [here](https://hetzerj.github.io/IA_quarto/).
+A demonstration of how to use the package is available [here](https://hetzerj.github.io/IA_quarto/).
