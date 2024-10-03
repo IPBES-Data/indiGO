@@ -33,3 +33,7 @@ To install the package, run the following command in R:
 
 devtools::install_github("hetzerj/indiGO")
 ```
+
+## How to Use
+
+You can find a demostration of the package usage [here](https://hetzerj.github.io/IA_quarto/).
