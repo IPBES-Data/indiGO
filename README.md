@@ -31,9 +31,9 @@ To install the package, run the following command in R:
 ```{r}
 #Installation from GitHub
 
-devtools::install_github("hetzerj/indiGO")
+devtools::install_github("IPBES-Data/indiGO")
 ```
 
 ## How to Use
 
-A demonstration of how to use the package is available [here](https://hetzerj.github.io/IA_quarto/).
+A demonstration of how to use the package is available [here](https://github.com/IPBES-Data/indiGO_Tutorials).
