@@ -10,54 +10,100 @@
 #'
 plot_scaled_to_1970 <- function(indicatorName, source = "package") {
 
-  # Load indicator data
-  ts <- indi_data(indicatorName, source = source)
+  # If only one source is given, use it for all indicators
+  if (length(source) == 1) {
+    source <- rep(source, length(indicatorName))
+  }
 
-  # Rescale values relative to 1970
-  s70 <- try(rescale_to_1970(v = ts$value, y = ts$year))
+  s70_list <- list()
 
-  # Check if rescaling was successful and if there are enough values to plot
-  if (class(s70) != "try-error" & sum(!is.na(s70)) > 1) {
-    biggest <- max(s70$scaled70, na.rm = TRUE)
-    ymax <- max(c(biggest, 100))
+  for (i in seq_along(indicatorName)) {
 
-    # Create the plot for rescaled data with a trend line
-    p_scaled <- ggplot2::ggplot(s70, ggplot2::aes(x = year, y = scaled70)) +
-      ggplot2::geom_point(colour = "blue", size = 3) +
-      ggplot2::xlim(c(1970, max(ts$year, na.rm = TRUE))) +
-      ggplot2::labs(
-        title = getOption("Name_for_plot"),
-        subtitle = "Change since 1970 or, if later, the first available year",
-        y = "Rescaled value (first available year since 1970 = 100)",
-        x = "Year"
+    # Load indicator data
+    ts <- indi_data(
+      indicatorName[i],
+      source = source[i]
+    )
+
+    # Rescale values relative to 1970
+    s70 <- try(
+      rescale_to_1970(
+        v = ts$value,
+        y = ts$year
+      )
+    )
+
+    # Check if rescaling was successful and if there are enough values to plot
+    if (class(s70) != "try-error" & sum(!is.na(s70)) > 1) {
+
+      s70$indicator <- indicatorName[i]
+      s70$source <- source[i]
+
+      s70$series <- paste0(
+        indicatorName[i],
+        " (",
+        source[i],
+        ")"
       )
 
-    # Add confidence intervals if available
-    if (sum(!is.na(s70$scaled.upper)) > 1) {
-      p_scaled <- p_scaled +
-        ggplot2::geom_ribbon(ggplot2::aes(
-          ymin = scaled.lower,
-          ymax = scaled.upper
-        ), fill = "lightgrey") +
-        ggplot2::geom_point(colour = "blue", size = 3)
+      s70_list[[length(s70_list) + 1]] <- s70
     }
+  }
 
-    # Add the main trend line
-    p_scaled <- p_scaled + ggplot2::geom_line(ggplot2::aes(x = year, y = scaled.fit), color = "black")
+  # Combine indicators
+  s70 <- do.call(rbind, s70_list)
 
-  } else {
-    # If not enough data is available, produce a blank plot with an explanatory message
-    p_scaled <- ggplot2::ggplot(ts, ggplot2::aes(x = year, y = value)) +
-      ggplot2::geom_blank() +
-      ggplot2::ylim(c(0, 100)) +
-      ggplot2::xlim(c(1970, 2020)) +
-      ggplot2::labs(
-        title = getOption("Name_for_plot"),
-        subtitle = "Not enough data to estimate trend since 1970",
-        y = "",
-        x = ""
+  # Create the plot
+  p_scaled <- ggplot2::ggplot(
+    s70,
+    ggplot2::aes(
+      x = year,
+      y = scaled70,
+      colour = series,
+      group = series
+    )
+  ) +
+    ggplot2::geom_point(
+      size = 3,
+      alpha = 0.8
+    ) +
+    ggplot2::labs(
+      subtitle = "Change since 1970 or, if later, the first available year",
+      y = "Rescaled value (first available year since 1970 = 100)",
+      x = "Year",
+      colour = "Indicator",
+      fill = "Indicator"
+    )
+
+  # Add confidence intervals if available
+  if (sum(!is.na(s70$scaled.upper)) > 1) {
+
+    p_scaled <- p_scaled +
+      ggplot2::geom_ribbon(
+        ggplot2::aes(
+          ymin = scaled.lower,
+          ymax = scaled.upper,
+          fill = series,
+          group = series
+        ),
+        alpha = 0.15,
+        colour = NA
+      ) +
+      ggplot2::geom_point(
+        size = 3,
+        alpha = 0.8
       )
   }
+
+  # Add main trend lines
+  p_scaled <- p_scaled +
+    ggplot2::geom_line(
+      ggplot2::aes(
+        y = scaled.fit
+      ),
+      linewidth = 1,
+      alpha = 0.65
+    )
 
   return(p_scaled)
 }

@@ -11,16 +11,53 @@
 #'
 plot_indi_data <- function(indicatorName, source = "package") {
   # Load indicator data using the indiGO package's internal function
-  ts <- indi_data(indicatorName, source = source)
 
-  # Create the plot with ggplot2
-  p_absolute <- ggplot2::ggplot(ts, ggplot2::aes(x = year, y = value)) +
-    ggplot2::geom_point(colour = "red", size = 3) +
+  # If only one source is given, use it for all indicators
+  if (length(source) == 1) {
+    source <- rep(source, length(indicatorName))
+  }
+
+  # Load all requested indicator/source combinations
+  ts_list <- lapply(seq_along(indicatorName), function(i) {
+
+    dat <- indi_data(
+      indicatorName[i],
+      source = source[i]
+    )
+
+    dat$indicator <- indicatorName[i]
+    dat$source <- source[i]
+
+    dat$series <- paste0(
+      indicatorName[i],
+      " (",
+      source[i],
+      ")"
+    )
+
+    dat
+  })
+
+  # Combine into one data frame
+  ts <- do.call(rbind, ts_list)
+
+
+  p_absolute <- ggplot2::ggplot(
+    ts,
+    ggplot2::aes(
+      x = year,
+      y = value,
+      colour = series,
+      group = series
+    )
+  ) +
+    ggplot2::geom_line(linewidth = 1) +
+    ggplot2::geom_point(size = 3, alpha = 0.8) +
     ggplot2::labs(
-      title = getOption("Name_for_plot"),
       x = "Year",
       y = "Raw value",
-      subtitle = "Expressed on the scale of raw values"
+      subtitle = "Expressed on the scale of raw values",
+      colour = "Indicator"
     )
 
   return(p_absolute)
