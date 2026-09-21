@@ -30,7 +30,7 @@ rescale_to_percent <- function(v, y, hl, pv, agv, gt = 5) {
       percv$percent <- 100 * (percv$raw - agv) / (pv - agv)
     }
     if (hl == "Low") {
-      percv$percent <- 100 * (percv$raw - pv) / (agv - pv)
+      percv$percent <- 100 - (100 * (percv$raw - pv) / (agv - pv) )
     }
   }
 
