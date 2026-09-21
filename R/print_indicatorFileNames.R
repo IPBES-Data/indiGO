@@ -9,6 +9,12 @@
 #'
 #' @references IPBES (2019). *Global Assessment Chapter 2.2 – Supplementary Material: Indicators of Status & Trends in Nature*.
 #'
-print_indicatorFileNames <- function() {
-  return(sort(list.files(getOption("indicatorDataPath"))))
+print_indicatorFileNames <- function(source = "package") {
+  if (source == "local") {
+    data_dir <- getOption("indicatorLocalDataPath")
+  } else {
+    data_dir <- getOption("indicatorDataPath")
+  }
+
+  return(sort(list.files(data_dir)))
 }

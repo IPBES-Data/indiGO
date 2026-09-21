@@ -13,8 +13,17 @@
 #' @references
 #' Data sourced from IPBES (2019). *Global Assessment Chapter 2.2 – Supplementary Material: Indicators of Status & Trends in Nature*.
 #'
-indi_data <- function(indicatorName) {
-  data_path <- file.path(getOption("indicatorDataPath"), paste(indicatorName, ".txt", sep=""))
+indi_data <- function(indicatorName, source = "package") {
+
+  if (source == "local") {
+    data_dir <- getOption("indicatorLocalDataPath")
+    config_dir <- getOption("indicatorLocalConfigPath")
+  } else {
+    data_dir <- getOption("indicatorDataPath")
+    config_dir <- getOption("indicatorConfigPath")
+  }
+
+  data_path <- file.path(data_dir, paste0(indicatorName, ".txt"))
 
   # Check if the data file exists
   if (!file.exists(data_path)) {
@@ -24,7 +33,7 @@ indi_data <- function(indicatorName) {
   # Read the data from the text file
   dat <- read.table(data_path, header = TRUE)
 
-  config_path <- file.path(getOption("indicatorConfigPath"), paste(indicatorName, ".yaml", sep=""))
+  config_path <- file.path(config_dir, paste0(indicatorName, ".yaml"))
 
   # Check if the YAML configuration file exists
   if (!file.exists(config_path)) {

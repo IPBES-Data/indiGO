@@ -5,4 +5,8 @@
   options(indicatorDataPath = system.file("data", package = "indiGO"))
   options(indicatorConfigPath = system.file("config", package = "indiGO"))
 
+  # Optional paths for user-provided local indicators
+  options(indicatorLocalDataPath = system.file("data", package = "indiGO"))
+  options(indicatorLocalConfigPath = system.file("config", package = "indiGO"))
+
 }
