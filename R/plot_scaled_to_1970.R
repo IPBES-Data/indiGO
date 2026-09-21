@@ -8,10 +8,10 @@
 #' # Example: Plot the relative change since 1970 for the Aboveground biomass indicator
 #' plot_scaled_to_1970("aboveground_biomass")
 #'
-plot_scaled_to_1970 <- function(indicatorName) {
+plot_scaled_to_1970 <- function(indicatorName, source = "package") {
 
   # Load indicator data
-  ts <- indi_data(indicatorName)
+  ts <- indi_data(indicatorName, source = source)
 
   # Rescale values relative to 1970
   s70 <- try(rescale_to_1970(v = ts$value, y = ts$year))
@@ -24,7 +24,7 @@ plot_scaled_to_1970 <- function(indicatorName) {
     # Create the plot for rescaled data with a trend line
     p_scaled <- ggplot2::ggplot(s70, ggplot2::aes(x = year, y = scaled70)) +
       ggplot2::geom_point(colour = "blue", size = 3) +
-      ggplot2::xlim(c(1970, 2020)) +
+      ggplot2::xlim(c(1970, max(ts$year, na.rm = TRUE))) +
       ggplot2::labs(
         title = getOption("Name_for_plot"),
         subtitle = "Change since 1970 or, if later, the first available year",

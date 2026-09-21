@@ -9,9 +9,9 @@
 #' # Example: Plot the absolute values of the Aboveground biomass indicator
 #' plot_indi_data("aboveground_biomass")
 #'
-plot_indi_data <- function(indicatorName) {
+plot_indi_data <- function(indicatorName, source = "package") {
   # Load indicator data using the indiGO package's internal function
-  ts <- indi_data(indicatorName)
+  ts <- indi_data(indicatorName, source = source)
 
   # Create the plot with ggplot2
   p_absolute <- ggplot2::ggplot(ts, ggplot2::aes(x = year, y = value)) +

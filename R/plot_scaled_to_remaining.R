@@ -9,10 +9,10 @@
 #' # Example: Plot the trend line for the Percentage of Natural Habitat Extent
 #' plot_scaled_to_remaining("aboveground_biomass")
 
-plot_scaled_to_remaining<- function(indicatorName) {
+plot_scaled_to_remaining<- function(indicatorName, source = "package") {
 
   # Load indicator data and corresponding metadata
-  ts <- indi_data(indicatorName)
+  ts <- indi_data(indicatorName, source = source)
 
   # Attempt to rescale the data to a percentage (if possible)
   pct <- try(rescale_to_percent(

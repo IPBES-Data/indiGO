@@ -15,13 +15,13 @@
 #' # Example: Plot status and trend for the Percentage of Natural Habitat Extent
 #' plot_indiGO("aboveground_biomass")
 #'
-plot_indiGO <- function(indicatorName) {
+plot_indiGO <- function(indicatorName, source = "package") {
 
   # Combine the three specific plots into a single 3-panel plot
   gridExtra::grid.arrange(
-    plot_indi_data(indicatorName),    # Absolute values plot (left panel)
-    plot_scaled_to_remaining(indicatorName),   # Remaining percentage in comparison to pristine world (middle panel)
-    plot_scaled_to_1970(indicatorName),  # Relative change since 1970 (right panel)
+    plot_indi_data(indicatorName, source = source),    # Absolute values plot (left panel)
+    plot_scaled_to_remaining(indicatorName, source = source),   # Remaining percentage in comparison to pristine world (middle panel)
+    plot_scaled_to_1970(indicatorName, source = source),  # Relative change since 1970 (right panel)
     ncol = 3,                             # Arrange in 3 columns
     heights = c(1),                       # Control height ratio (single row)
     widths = c(2, 2, 2)
